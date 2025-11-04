@@ -4,6 +4,11 @@
 
 In this workshop you will have a better vision of how to use and set up a functional character animation system, creating and managing animation states, transitions and blend trees, and linking these animations to a Cinemachine state-driven camera that automatically changes angles based on the character’s current animation state.
 
+**Important!**
+- Install the Input System Package (if it was not already installed)
+- It's recommended to use Unity version: ```6000.2.6.f2```, but any other version might work as well.
+
+
 
 ## Animation Setup 💃
 **Step 1: Create and Configure an Animator**
@@ -23,7 +28,9 @@ In this workshop you will have a better vision of how to use and set up a functi
 
 ***What you have learned of creating this setup?***
 
----
+*You should now understand how Unity’s Animator system connects animations to characters, and how Blend Trees and parameters make animations respond dynamically to gameplay inputs.*
+
+*The reason why you use a 2D Freeform Directional blend tree is to smoothly blend between animations based on movement direction, allowing your character to transition between forward, backward, and sideways motions for more realistic movement.*
 
 **Step 2: Blend Tree and Movement**
 
