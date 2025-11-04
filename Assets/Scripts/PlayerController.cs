@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetFloat("MoveX", _moveInput.x, 0.05f, Time.deltaTime);
-        animator.SetFloat("MoveY", _moveInput.y, 0.05f, Time.deltaTime);
+        animator.SetFloat("MoveZ", _moveInput.y, 0.05f, Time.deltaTime);
 
     }
     
