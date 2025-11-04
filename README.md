@@ -53,8 +53,8 @@ The parameter values are being updated using the pre-made `PlayerController` scr
 6. Disable **'Apply Root Motion'** in the Animator Component in the Inspector.
 > When Root Motion is enabled, the position and rotation of the character will be controlled by the animation itself instead 
 > of being script based (e.g., transform). This can be useful in certain situations but you will not be using this during this workshop.
-7. Run the game. *(Your character should play the Idle animation :] )*</br>
-<br>
+7. Run the game. *(Your character should play the Idle animation :] )*
+
 8. Inside the Blend Tree, add more Motion fields. You will notice that a Blend Tree Diagram popped up. 
 9. Assign the animations to the fields. Don't forget to set the **Rig Type** and **Loop Time** settings correctly again for these !
    - Running Forward and set `Pos X = 0` and `Pos Y = 1`
@@ -62,9 +62,9 @@ The parameter values are being updated using the pre-made `PlayerController` scr
    - Strafe Left and set `Pos X = -1` and `Pos Y = 0`
    - Strafe Right and set `Pos X = 1` and `Pos Y = 0` 
    
-   > After assigning the animations to the fields, you can drag around the red dot to see how the different animations blend for different `VelocityX`(`Pos X`)
-     and `VelocityZ` (`Pos Y`) values. You can see the model in the inspector move accordingly by clicking the _Play_ button in the inspector. 
-The circles that appear around the blue diamonds (the animations) show which animations influence the blend at the current values.
+   >    After assigning the animations to the fields, you can drag around the red dot to see how the different animations blend for different `VelocityX`(`Pos X`)
+        and `VelocityZ` (`Pos Y`) values. You can see the model in the inspector move accordingly by clicking the _Play_ button in the inspector. 
+   The circles that appear around the blue diamonds (the animations) show which animations influence the blend at the current values.
 
 ### Step 3: Add more Animation States
 1. Return to the **Base Layer** in the Animator Controller and add a new Empty State named ```PushUp```.
