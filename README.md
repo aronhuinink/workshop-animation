@@ -10,15 +10,15 @@ In this workshop you will have a better vision of how to use and set up a functi
 
 
 
-## Animation Setup 💃
+## Animator Component 💃
 **Step 1: Create and Configure an Animator**
-- Find the Idle animation clip in the ***Animations*** folder and change it's ***Rig Type*** from ```Generic``` to ```Humanoid```
-- Enable ***Loop Time*** in the animation clip.
+- Find the Idle animation clip in the ***Animations*** folder and change it's ***Rig Type*** from ```Generic``` to ```Humanoid``` in the Inspector by selecting the animation.
+- Make sure  ***Loop Time*** is enabled in the animation clip.
 - Create a new ***Animator Controller*** in the ***Assets/Animator*** folder by right clicking and navigate to: **Create -> Animation -> Animator Controller**
 - Attach the Animator on the Player Prefab in the Inspector
 - Create a ***Blend Tree*** state for the Idle animation in the Animator
 - Open the Blend Tree and change the ***Blend Type*** to ```2D Freeform Directional```
-- Create two float parameters called: ```VelocityX``` and ```VelocityY``` and change both *'Blend'* parameters in the Inspector
+- Create two float parameters called: ```VelocityX``` and ```VelocityZ``` and change both *'Blend'* parameters in the Inspector
 - Add a Motion Field
 - Choose the Idle animation clip and assign it to the Motion Field
 - Leave the PosX and PosY on ```0```
@@ -28,7 +28,7 @@ In this workshop you will have a better vision of how to use and set up a functi
 
 ***What you have learned of creating this setup?***
 
-*You should now understand how Unity’s Animator system connects animations to characters, and how Blend Trees and parameters make animations respond dynamically to gameplay inputs.*
+*The reason why you need to use a Humanoid rig, is so you can use aq avatar on the model which can be used to retarget humanoid animations. This is usefull for when you want use the same set of animations on a different humanoid model.*
 
 *The reason why you use a 2D Freeform Directional blend tree is to smoothly blend between animations based on movement direction, allowing your character to transition between forward, backward, and sideways motions for more realistic movement.*
 
@@ -50,37 +50,6 @@ Inside the Blend Tree, add more motion fields for:
 - Add a new field in Conditions and select ```PushUpTrigger```
 
 - While playing the game you can now press **'P'** on your keyboard. It will switch from Blend Tree state to Push Up state, which means the push-up animation will play. Pressing **'P'** again will switch from the PushUp state back to the Blend Tree state.
-
-
-*What *
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Create a transition between Idle and Push Ups.
-
-Add a Boolean parameter (e.g., DoPushUps) to control when to perform push-ups.
-
-Create a transition back to Idle when the Boolean is set to false.
-
-Go to the Idle animation clip again and ensure Loop Time is enabled.
-
-
-
-
-
 
 
 ## 2 Cinemachine Component 🎥
