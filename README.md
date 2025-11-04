@@ -1,14 +1,9 @@
 # MagikarpGirl Animation Workshop
 
-**Goal**
-
 In this workshop you will learn the basics for setting up a functional character animation system by
 creating and managing animation states, transitions and blend trees, and linking these animations to a Cinemachine state-driven camera that automatically changes angles based on the character’s current animation state.
 
-**Important !**
-- Install the Input System Package (if it has not already been installed)
-- Install the Cinemachine Package (if it has not already been installed)
-- It's recommended to use Unity version: ```6000.2.6.f2```, but any other version might work as well.
+It's recommended to also read the call-outs between the different steps to get the most out of this workshop.
 
 <hr>
 
@@ -18,6 +13,11 @@ creating and managing animation states, transitions and blend trees, and linking
 git clone https://github.com/aronhuinink/workshop-animation.git
 ```
 2. **Add the project `workshop-animation` in Unity Hub and open it.**
+
+**Important !**
+- Install the Input System Package (if it has not already been installed)
+- Install the Cinemachine Package (if it has not already been installed)
+- It's recommended to use Unity version: ```6000.2.6.f2```, but any other version might work as well.
 
 Now you should be ready to get started with the workshop !
 <hr>
@@ -60,9 +60,9 @@ The parameter values are being updated using the pre-made `PlayerController` scr
    - Running Forward and set `Pos X = 0` and `Pos Y = 1`
    - Running Backward and set `Pos X = 0` and `Pos Y = -1`
    - Strafe Left and set `Pos X = -1` and `Pos Y = 0`
-   - Strafe Right and set `Pos X = 1` and `Pos Y = 0` 
+   - Strafe Right and set `Pos X = 1` and `Pos Y = 0`</br>
    
-   >    After assigning the animations to the fields, you can drag around the red dot to see how the different animations blend for different `VelocityX`(`Pos X`)
+   > After assigning the following animations to the fields, you can drag around the red dot to see how the different animations blend for different `VelocityX`(`Pos X`)
         and `VelocityZ` (`Pos Y`) values. You can see the model in the inspector move accordingly by clicking the _Play_ button in the inspector. 
    The circles that appear around the blue diamonds (the animations) show which animations influence the blend at the current values.
 
