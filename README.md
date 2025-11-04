@@ -53,15 +53,14 @@ The parameter values are being updated using the pre-made `PlayerController` scr
 6. Disable **'Apply Root Motion'** in the Animator Component in the Inspector.
 > When Root Motion is enabled, the position and rotation of the character will be controlled by the animation itself instead 
 > of being script based (e.g., transform). This can be useful in certain situations but you will not be using this during this workshop.
-7. Run the game. *(Your character should play the Idle animation :] )*
-<br>
+7. Run the game. *(Your character should play the Idle animation :] )*</br>
 <br>
 8. Inside the Blend Tree, add more Motion fields. You will notice that a Blend Tree Diagram popped up. 
 9. Assign the animations to the fields. Don't forget to set the **Rig Type** and **Loop Time** settings correctly again for these !
-   - Running Forward and set ```Pos X = 0``` and ```Pos Y = 1```
-   - Running Backward and set ```Pos X = 0``` and ```Pos Y = -1```
-   - Strafe Left and set ```Pos X = -1``` and ```Pos Y = 0```
-   - Strafe Right and set ```Pos X = 1``` and ```Pos Y = 0``` 
+   - Running Forward and set `Pos X = 0` and `Pos Y = 1`
+   - Running Backward and set `Pos X = 0` and `Pos Y = -1`
+   - Strafe Left and set `Pos X = -1` and `Pos Y = 0`
+   - Strafe Right and set `Pos X = 1` and `Pos Y = 0` 
    
    > After assigning the animations to the fields, you can drag around the red dot to see how the different animations blend for different `VelocityX`(`Pos X`)
      and `VelocityZ` (`Pos Y`) values. You can see the model in the inspector move accordingly by clicking the _Play_ button in the inspector. 
@@ -79,6 +78,7 @@ The circles that appear around the blue diamonds (the animations) show which ani
 - While playing the game you can now press **'P'** on your keyboard. It will switch from the Movement Blend Tree state to the Push Up state and play the push-up animation. 
 Pressing **'P'** again will switch from the Push Up state back to the Blend Tree state.
 
+<hr>
 
 ## Cinemachine Component 🎥
 
