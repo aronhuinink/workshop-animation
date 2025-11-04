@@ -35,10 +35,10 @@ In this workshop you will have a better vision of how to use and set up a functi
 **Step 2: Blend Tree and Movement**
 
 Inside the Blend Tree, add more motion fields for: 
-1. Running Forward and set ```Pos X = 1``` and ```Pos Y = 0```
-2. Running Backward and set ```Pos X = -1``` and ```Pos Y = 0```
-3. Strafe Left and set ```Pos X = -1.5``` and ```Pos Y = 0```
-4. Strafe Right and set ```Pos X = 1.5``` and ```Pos Y = 0```
+1. Running Forward and set ```Pos X = 0``` and ```Pos Y = 1```
+2. Running Backward and set ```Pos X = 0``` and ```Pos Y = -1```
+3. Strafe Left and set ```Pos X = -1``` and ```Pos Y = 0```
+4. Strafe Right and set ```Pos X = 1``` and ```Pos Y = 0```
 
 
 **Step 3: Add more Animation States**
