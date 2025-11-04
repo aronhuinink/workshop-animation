@@ -85,20 +85,21 @@ Go to the Idle animation clip again and ensure Loop Time is enabled.
 
 ## 2 Cinemachine Component 🎥
 
-**Set Up State-Driven Camera** 
-- Now that your animation state machine works, we will make the camera change angles based on it.
-- For ease of use, we’ll use a Composite Camera setup.
+Now that your animation state machine works, we will make the camera change angles based on it.
+For ease of use, we’ll use a Composite Camera setup.
 
-
-**Create a State-Driven Camera**
+**Basic prep**
+-Just in case something went wrong regarding cinemachine, please make sure cinemachine is installed.
+**Create a State-Driven Camera**    
 - Create a State-Driven Camera Object in your scene.
 - Drag your character into the Animated Target field.
-- The camera should now have access to the Animator States.
-- Add several child cameras under the state-driven camera.
+>The camera should now have access to the Animator States.
+- Add several child cameras under the state-driven camera. You can do this from the inspectortab with the plus sign under child cameras.
 - Position these child cameras in different places so it’s easy to see when the view changes.
+>For ease of use you can align a camera with your viewport by **rightclicking** the camera and choosing **align with view**
 
 **Link States to Cameras**
-- In the State-Driven Camera settings, add rows to connect animator states to specific cameras.
+- In the State-Driven Camera settings, add rows to connect animator states to specific cameras. You can do this through the inspector under the instructions header
 - In each row, select a State and a Camera.
 - Play the game and observe whether the camera angles switch smoothly based on animation states.
 
@@ -107,7 +108,7 @@ Go to the Idle animation clip again and ensure Loop Time is enabled.
 - Adjust blend times, easing, and field of view until the result feels natural and dynamic.
 
  **Result** ✅
-You now have a fully functioning animated character that transitions smoothly between animations, and a Cinemachine system that dynamically changes camera angles depending on those animation states — creating a polished, game-ready presentation.
+You now have a fully functioning animated character that transitions smoothly between animations, and a Cinemachine system that dynamically changes camera angles depending on those animation states.
 
 
 
